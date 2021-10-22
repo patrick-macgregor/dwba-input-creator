@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# ROOT stuff
+*C_ACLiC_dict_rdict.pcm
+*_C.so
+
+# Other
+ame2020/*.xlsx
+ame2020/*.txt
+test.*
