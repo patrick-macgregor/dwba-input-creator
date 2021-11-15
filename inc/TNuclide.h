@@ -19,24 +19,25 @@ class TNuclide{
 		
 	public:
 		// Constructors and Destructors
-		TNuclide()
+		TNuclide();
 		TNuclide( TString name ){ this->SetNuclide(name); }
 		TNuclide( Int_t A, Int_t Z ){ this->SetNuclide(A,Z); }
 		TNuclide( const TNuclide &a );
 		~TNuclide();
 	
 		// Getters
-		Int_t GetZ( return fZ; }
-		Int_t GetA( return fA; }
-		Int_t GetN( return fA - fZ; }
-		TString GetElement( return fElement; }
-		Double_t GetMassExcess( return fMassExcess; }
-		Double_t GetMassExcessErr( return fMassExcessErr; }
-		
-		// Non-trivial getters
-		Double_t GetMass;
+		Int_t GetZ(){ return fZ; }
+		Int_t GetA(){ return fA; }
+		Int_t GetN(){ return fA - fZ; }
+		TString GetElement(){ return fElement; }
+		Double_t GetMassExcess(){ return fMassExcess; }
+		Double_t GetMassExcessErr(){ return fMassExcessErr; }
 		
 		// Setters
 		void SetNuclide( TString name );
 		void SetNuclide( Int_t A, Int_t Z );
+		void SetNuclide( TNuclide &a );
+		
+		// Update
+		void Update();
 };

@@ -74,6 +74,9 @@ Int_t TAMEAccessor::GetMassExcess( Int_t A, Int_t Z, Double_t& mass_excess, Doub
 	return 0;
 }
 
+// Define global accessor
+TAMEAccessor *gAME_ACCESESOR = new TAMEAccessor();
+
 
 
 
